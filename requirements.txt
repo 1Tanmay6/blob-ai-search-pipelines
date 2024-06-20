@@ -1,0 +1,15 @@
+azure-search-documents
+azure-ai-translation-document
+azure-storage-blob
+azure-cognitiveservices-vision-computervision
+python-dotenv
+PyPDF2
+python-docx
+pdfplumber
+langchain
+langchain-community
+unstructured[all-docs] 
+pydantic 
+lxml 
+langchainhub 
+uvicorn

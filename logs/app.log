@@ -1,0 +1,124 @@
+2024-06-20 19:14:25,885 - INFO - Pipeline Triggered
+2024-06-20 19:14:25,934 - INFO - Intialization done successfully
+2024-06-20 19:14:25,934 - INFO - Trying to create an index...
+2024-06-20 19:14:25,935 - INFO - Request URL: 'https://blob-search-connection.search.windows.net/indexes?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '527'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=minimal'
+    'x-ms-client-request-id': '356e76ba-2f0b-11ef-b0cc-70a6cc31d887'
+    'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+A body is sent with the request
+2024-06-20 19:14:28,027 - INFO - Response status: 201
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8'
+    'ETag': '"0x8DC912F1ACD9125"'
+    'Location': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'OData-Version': 'REDACTED'
+    'request-id': '356e76ba-2f0b-11ef-b0cc-70a6cc31d887'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:44:27 GMT'
+2024-06-20 19:14:28,028 - INFO - {'additional_properties': {}, 'name': 'pipeline-blob-index', 'fields': [<azure.search.documents.indexes.models._index.SearchField object at 0x7f3e37d3ce90>, <azure.search.documents.indexes.models._index.SearchField object at 0x7f3e37476120>, <azure.search.documents.indexes.models._index.SearchField object at 0x7f3e37890f20>], 'scoring_profiles': [], 'default_scoring_profile': None, 'cors_options': None, 'suggesters': [], 'analyzers': None, 'tokenizers': None, 'token_filters': [], 'char_filters': [], 'encryption_key': None, 'similarity': <azure.search.documents.indexes._generated.models._models_py3.BM25Similarity object at 0x7f3e374fa690>, 'semantic_search': None, 'e_tag': '"0x8DC912F1ACD9125"', 'vector_search': None}
+2024-06-20 19:14:28,028 - INFO - Index Created successfully by name pipeline-blob-index.
+2024-06-20 19:14:28,029 - INFO - Trying to create an datasource...
+2024-06-20 19:14:28,030 - INFO - Request URL: 'https://blob-search-connection.search.windows.net/datasources?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '336'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=minimal'
+    'x-ms-client-request-id': '36ae2ad4-2f0b-11ef-b0cc-70a6cc31d887'
+    'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+A body is sent with the request
+2024-06-20 19:14:29,084 - INFO - Response status: 201
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8'
+    'ETag': '"0x8DC912F1B6F83DB"'
+    'Location': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'OData-Version': 'REDACTED'
+    'request-id': '36ae2ad4-2f0b-11ef-b0cc-70a6cc31d887'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:44:28 GMT'
+2024-06-20 19:14:29,085 - INFO - {'additional_properties': {}, 'name': 'pipeline-blob-datasource', 'description': None, 'type': 'azureblob', 'connection_string': None, 'container': <azure.search.documents.indexes._generated.models._models_py3.SearchIndexerDataContainer object at 0x7f3e374faab0>, 'data_change_detection_policy': None, 'data_deletion_detection_policy': None, 'e_tag': '"0x8DC912F1B6F83DB"', 'encryption_key': None}
+2024-06-20 19:14:29,085 - INFO - Datasource Created successfully by name pipeline-blob-datasource.
+2024-06-20 19:14:29,085 - INFO - Trying to create an indexer...
+2024-06-20 19:14:29,085 - INFO - Request URL: 'https://blob-search-connection.search.windows.net/indexers?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '174'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=minimal'
+    'x-ms-client-request-id': '374f3366-2f0b-11ef-b0cc-70a6cc31d887'
+    'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+A body is sent with the request
+2024-06-20 19:14:44,669 - INFO - Response status: 201
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8'
+    'ETag': '"0x8DC912F249F68CD"'
+    'Location': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'OData-Version': 'REDACTED'
+    'request-id': '374f3366-2f0b-11ef-b0cc-70a6cc31d887'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:44:44 GMT'
+2024-06-20 19:14:44,674 - INFO - {'additional_properties': {'@odata.context': 'https://blob-search-connection.search.windows.net/$metadata#indexers/$entity'}, 'name': 'pipeline-blob-indexer', 'description': None, 'data_source_name': 'pipeline-blob-datasource', 'skillset_name': None, 'target_index_name': 'pipeline-blob-index', 'schedule': <azure.search.documents.indexes._generated.models._models_py3.IndexingSchedule object at 0x7f3e374fa6f0>, 'parameters': None, 'field_mappings': [], 'output_field_mappings': [], 'is_disabled': False, 'e_tag': '"0x8DC912F249F68CD"', 'encryption_key': None}
+2024-06-20 19:14:44,674 - INFO - Indexer Created successfully by name pipeline-blob-indexer.
+2024-06-20 19:14:44,675 - INFO - Request URL: 'https://blob-search-connection.search.windows.net/indexers('pipeline-blob-indexer')/search.run?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=minimal'
+    'x-ms-client-request-id': '4099ef1a-2f0b-11ef-b0cc-70a6cc31d887'
+    'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+No body was attached to the request
+2024-06-20 19:14:44,937 - INFO - Response status: 202
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'request-id': '4099ef1a-2f0b-11ef-b0cc-70a6cc31d887'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:44:44 GMT'
+2024-06-20 19:14:44,937 - INFO - Indexer Ran successfully
+2024-06-20 19:14:44,938 - WARNING - Indexer is on a cooldown of 180 seconds. For this tier
+2024-06-20 19:14:44,938 - INFO - Triggering the search client
+2024-06-20 19:14:44,938 - INFO - Query ran successfully, returing the results
+2024-06-20 19:14:44,940 - INFO - Request URL: 'https://blob-search-connection.search.windows.net/indexes('pipeline-blob-index')/docs/search.post.search?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '17'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=none'
+    'x-ms-client-request-id': '40c26c92-2f0b-11ef-b0cc-70a6cc31d887'
+    'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+A body is sent with the request
+2024-06-20 19:14:46,034 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; odata.metadata=none; odata.streaming=true; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Vary': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'OData-Version': 'REDACTED'
+    'request-id': '40c26c92-2f0b-11ef-b0cc-70a6cc31d887'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:44:45 GMT'

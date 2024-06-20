@@ -1,0 +1,397 @@
+2024-06-20 19:13:34,836 - INFO - Checking for the availablity of the database at database/file_check_in.db
+2024-06-20 19:13:34,836 - INFO - Creating a persistent table
+2024-06-20 19:13:34,859 - INFO - Database created at: database/file_check_in.db, along with table.
+2024-06-20 19:13:34,860 - INFO - Closing the connection with the database.
+2024-06-20 19:13:34,860 - INFO - Creating a Blob Service Client with the provided connection string.
+2024-06-20 19:13:34,861 - INFO - Created Blob Service Client
+2024-06-20 19:13:34,861 - INFO - Creating a Search Client with the provided connection string.
+2024-06-20 19:13:34,862 - INFO - Creating a Search Client.
+2024-06-20 19:13:34,862 - INFO - Initialization successfully Completed
+2024-06-20 19:13:34,862 - INFO - Trying to create an index...
+2024-06-20 19:13:34,862 - INFO - Request URL: 'https://blob-search-connection.search.windows.net/indexes?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '532'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=minimal'
+    'x-ms-client-request-id': '16fd6cae-2f0b-11ef-967d-70a6cc31d887'
+    'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+A body is sent with the request
+2024-06-20 19:13:36,935 - INFO - Response status: 201
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8'
+    'ETag': '"0x8DC912EFC5992F8"'
+    'Location': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'OData-Version': 'REDACTED'
+    'request-id': '16fd6cae-2f0b-11ef-967d-70a6cc31d887'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:36 GMT'
+2024-06-20 19:13:36,936 - INFO - Index Created successfully by name langchain-pipeline-index.
+2024-06-20 19:13:36,936 - INFO - Pipeline Triggered
+2024-06-20 19:13:36,936 - INFO - Request URL: 'https://storagelearndemo.blob.core.windows.net/storage-raw-material?restype=REDACTED&comp=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.20.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '1839dde6-2f0b-11ef-967d-70a6cc31d887'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-06-20 19:13:38,133 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '6664040d-501e-0047-0217-c30cd0000000'
+    'x-ms-client-request-id': '1839dde6-2f0b-11ef-967d-70a6cc31d887'
+    'x-ms-version': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:37 GMT'
+2024-06-20 19:13:38,140 - INFO - Intializing process for docs/pdfs/ml/svd.pdf
+2024-06-20 19:13:38,142 - INFO - Request URL: 'https://storagelearndemo.blob.core.windows.net/storage-raw-material/docs/pdfs/ml/svd.pdf'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.20.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '18f1cb2c-2f0b-11ef-967d-70a6cc31d887'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-06-20 19:13:38,384 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '1926200'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 10 Jun 2024 04:57:36 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DC8909D8ADBDE5"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '66640679-501e-0047-4a17-c30cd0000000'
+    'x-ms-client-request-id': '18f1cb2c-2f0b-11ef-967d-70a6cc31d887'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:37 GMT'
+2024-06-20 19:13:40,795 - INFO - Starting the text extractor
+2024-06-20 19:13:40,797 - INFO - Extracting from file temp/blob/svd.pdf
+2024-06-20 19:13:44,102 - INFO - pikepdf C++ to Python logger bridge initialized
+2024-06-20 19:13:50,057 - INFO - Extraction Completed for file temp/blob/svd.pdf
+2024-06-20 19:13:50,057 - INFO - Starting the chunker
+2024-06-20 19:13:50,058 - INFO - Chunked Successfully for file temp/txt/temp.txt
+2024-06-20 19:13:50,058 - INFO - Generating documents for the chunks
+2024-06-20 19:13:50,058 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,058 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,058 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,058 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,058 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,058 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,058 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,058 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,058 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,058 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:50,059 - INFO - Uploading documents to the AI search
+2024-06-20 19:13:50,060 - INFO - Request URL: 'https://blob-search-connection.search.windows.net/indexes('langchain-pipeline-index')/docs/search.index?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '54951'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=none'
+    'x-ms-client-request-id': '200c6f52-2f0b-11ef-967d-70a6cc31d887'
+    'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+A body is sent with the request
+2024-06-20 19:13:51,574 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; odata.metadata=none; odata.streaming=true; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Vary': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'OData-Version': 'REDACTED'
+    'request-id': '200c6f52-2f0b-11ef-967d-70a6cc31d887'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:51 GMT'
+2024-06-20 19:13:51,598 - INFO - Intializing process for docs/pdfs/table.pdf
+2024-06-20 19:13:51,600 - INFO - Request URL: 'https://storagelearndemo.blob.core.windows.net/storage-raw-material/docs/pdfs/table.pdf'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.20.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '20f756ac-2f0b-11ef-967d-70a6cc31d887'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-06-20 19:13:51,819 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '66887'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 10 Jun 2024 04:57:33 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DC8909D6D7B29F"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '66644e7e-501e-0047-1817-c30cd0000000'
+    'x-ms-client-request-id': '20f756ac-2f0b-11ef-967d-70a6cc31d887'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:51 GMT'
+2024-06-20 19:13:51,824 - INFO - Starting the text extractor
+2024-06-20 19:13:51,824 - INFO - Extracting from file temp/blob/table.pdf
+2024-06-20 19:13:51,864 - INFO - Extraction Completed for file temp/blob/table.pdf
+2024-06-20 19:13:51,865 - INFO - Starting the chunker
+2024-06-20 19:13:51,865 - INFO - Chunked Successfully for file temp/txt/temp.txt
+2024-06-20 19:13:51,865 - INFO - Generating documents for the chunks
+2024-06-20 19:13:51,865 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:51,865 - INFO - Uploading documents to the AI search
+2024-06-20 19:13:51,865 - INFO - Request URL: 'https://blob-search-connection.search.windows.net/indexes('langchain-pipeline-index')/docs/search.index?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '576'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=none'
+    'x-ms-client-request-id': '211fdd16-2f0b-11ef-967d-70a6cc31d887'
+    'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+A body is sent with the request
+2024-06-20 19:13:52,142 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; odata.metadata=none; odata.streaming=true; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Vary': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'OData-Version': 'REDACTED'
+    'request-id': '211fdd16-2f0b-11ef-967d-70a6cc31d887'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:51 GMT'
+2024-06-20 19:13:52,163 - INFO - Intializing process for docs/pdfs/web_dev/flask.pdf
+2024-06-20 19:13:52,165 - INFO - Request URL: 'https://storagelearndemo.blob.core.windows.net/storage-raw-material/docs/pdfs/web_dev/flask.pdf'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.20.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '214d924c-2f0b-11ef-967d-70a6cc31d887'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-06-20 19:13:52,389 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '107903'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 10 Jun 2024 04:57:37 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DC8909D98CC307"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '66645137-501e-0047-7b17-c30cd0000000'
+    'x-ms-client-request-id': '214d924c-2f0b-11ef-967d-70a6cc31d887'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:51 GMT'
+2024-06-20 19:13:52,392 - INFO - Starting the text extractor
+2024-06-20 19:13:52,392 - INFO - Extracting from file temp/blob/flask.pdf
+2024-06-20 19:13:53,008 - INFO - Extraction Completed for file temp/blob/flask.pdf
+2024-06-20 19:13:53,009 - INFO - Starting the chunker
+2024-06-20 19:13:53,009 - INFO - Chunked Successfully for file temp/txt/temp.txt
+2024-06-20 19:13:53,009 - INFO - Generating documents for the chunks
+2024-06-20 19:13:53,009 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:53,009 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:53,009 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:53,009 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:53,009 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:53,009 - INFO - Uploading documents to the AI search
+2024-06-20 19:13:53,010 - INFO - Request URL: 'https://blob-search-connection.search.windows.net/indexes('langchain-pipeline-index')/docs/search.index?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '11231'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=none'
+    'x-ms-client-request-id': '21ce78da-2f0b-11ef-967d-70a6cc31d887'
+    'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+A body is sent with the request
+2024-06-20 19:13:53,287 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; odata.metadata=none; odata.streaming=true; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Vary': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'OData-Version': 'REDACTED'
+    'request-id': '21ce78da-2f0b-11ef-967d-70a6cc31d887'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:52 GMT'
+2024-06-20 19:13:53,309 - INFO - Intializing process for docs/pdfs/web_dev/node.pdf
+2024-06-20 19:13:53,310 - INFO - Request URL: 'https://storagelearndemo.blob.core.windows.net/storage-raw-material/docs/pdfs/web_dev/node.pdf'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.20.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '21fc5318-2f0b-11ef-967d-70a6cc31d887'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-06-20 19:13:53,531 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '42463'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 10 Jun 2024 04:57:36 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DC8909D907391F"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '66645742-501e-0047-1d17-c30cd0000000'
+    'x-ms-client-request-id': '21fc5318-2f0b-11ef-967d-70a6cc31d887'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:53 GMT'
+2024-06-20 19:13:53,533 - INFO - Starting the text extractor
+2024-06-20 19:13:53,534 - INFO - Extracting from file temp/blob/node.pdf
+2024-06-20 19:13:53,711 - INFO - Extraction Completed for file temp/blob/node.pdf
+2024-06-20 19:13:53,711 - INFO - Starting the chunker
+2024-06-20 19:13:53,711 - INFO - Chunked Successfully for file temp/txt/temp.txt
+2024-06-20 19:13:53,711 - INFO - Generating documents for the chunks
+2024-06-20 19:13:53,712 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:53,712 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:53,712 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:53,712 - INFO - Uploading documents to the AI search
+2024-06-20 19:13:53,712 - INFO - Request URL: 'https://blob-search-connection.search.windows.net/indexes('langchain-pipeline-index')/docs/search.index?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '5578'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=none'
+    'x-ms-client-request-id': '2239b03c-2f0b-11ef-967d-70a6cc31d887'
+    'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+A body is sent with the request
+2024-06-20 19:13:53,998 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; odata.metadata=none; odata.streaming=true; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Vary': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'OData-Version': 'REDACTED'
+    'request-id': '2239b03c-2f0b-11ef-967d-70a6cc31d887'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:52 GMT'
+2024-06-20 19:13:54,019 - INFO - Intializing process for docs/pdfs/web_dev/react.pdf
+2024-06-20 19:13:54,021 - INFO - Request URL: 'https://storagelearndemo.blob.core.windows.net/storage-raw-material/docs/pdfs/web_dev/react.pdf'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.20.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2268bb8e-2f0b-11ef-967d-70a6cc31d887'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-06-20 19:13:54,249 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '47158'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 10 Jun 2024 04:57:36 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DC8909D8D4A22D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '66645a45-501e-0047-6217-c30cd0000000'
+    'x-ms-client-request-id': '2268bb8e-2f0b-11ef-967d-70a6cc31d887'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:53 GMT'
+2024-06-20 19:13:54,251 - INFO - Starting the text extractor
+2024-06-20 19:13:54,252 - INFO - Extracting from file temp/blob/react.pdf
+2024-06-20 19:13:54,358 - INFO - Extraction Completed for file temp/blob/react.pdf
+2024-06-20 19:13:54,359 - INFO - Starting the chunker
+2024-06-20 19:13:54,359 - INFO - Chunked Successfully for file temp/txt/temp.txt
+2024-06-20 19:13:54,359 - INFO - Generating documents for the chunks
+2024-06-20 19:13:54,359 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:54,359 - INFO - Generation of documents successfully completed.
+2024-06-20 19:13:54,359 - INFO - Uploading documents to the AI search
+2024-06-20 19:13:54,359 - INFO - Request URL: 'https://blob-search-connection.search.windows.net/indexes('langchain-pipeline-index')/docs/search.index?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '2815'
+    'api-key': 'REDACTED'
+    'Accept': 'application/json;odata.metadata=none'
+    'x-ms-client-request-id': '229c6ed4-2f0b-11ef-967d-70a6cc31d887'
+    'User-Agent': 'azsdk-python-search-documents/11.4.0 Python/3.12.3 (Linux-6.7.11-200.fc39.x86_64-x86_64-with-glibc2.38)'
+A body is sent with the request
+2024-06-20 19:13:54,634 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; odata.metadata=none; odata.streaming=true; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Vary': 'REDACTED'
+    'Server': 'Microsoft-IIS/10.0'
+    'Strict-Transport-Security': 'REDACTED'
+    'Preference-Applied': 'REDACTED'
+    'OData-Version': 'REDACTED'
+    'request-id': '229c6ed4-2f0b-11ef-967d-70a6cc31d887'
+    'elapsed-time': 'REDACTED'
+    'Date': 'Thu, 20 Jun 2024 13:43:53 GMT'
